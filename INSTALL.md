@@ -49,6 +49,19 @@ Editar ~/.profile y agregar al final:
     export LC_ALL="en_US.UTF-8"
     export LANGUAGE="en_US.UTF-8"
 
+### Config general
+
+(opcional) Detener X server:
+    $ sudo service lightdm stop
+
+Libera RAM. También se puede configurar de forma permanente.
+
+Remover servicio:
+TODO: buscar forma más prolija, deshabilitando
+
+    rm /home/nvidia/report_ip_to_host.sh
+
+
 ### Scripts para liberar espacio (remover LibreOffice, etc)
 
 https://github.com/jetsonhacks/postFlashTX1
@@ -81,7 +94,7 @@ Kernel version:
 
     $ uname -a
     Linux tegra-ubuntu 4.4.38 #1 SMP PREEMPT Mon Apr 2 10:14:55 UTC 2018 aarch64 aarch64 aarch64 GNU/Linux
-    
+
 ### Swap de  8 gigas
     # Create a swapfile for Ubuntu at the current directory location
     fallocate -l 8G swapfile
