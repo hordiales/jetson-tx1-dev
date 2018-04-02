@@ -49,6 +49,13 @@ Editar ~/.profile y agregar al final:
     export LC_ALL="en_US.UTF-8"
     export LANGUAGE="en_US.UTF-8"
 
+### Scripts para liberar espacio (remover LibreOffice, etc)
+
+https://github.com/jetsonhacks/postFlashTX1
+
+    ./uninstallLibreoffice.sh
+    ./uninstall_unity_scope.sh
+
 ## Recompilar kernel para swap support
 
 El modelo Tx1 solo viene con 4GB de RAM, lo cual es medio limitado para algunas cosas. Para activar swap (en disco sata, usb storage o sd card) hay que recompilar el kernel, ya que la opción no se puede cargar como módulo.
@@ -69,6 +76,12 @@ Correr desde X (o con remoto ssh -X), ya que abre un editor:
 
 Reboot.
 
+
+Kernel version:
+
+    $ uname -a
+    Linux tegra-ubuntu 4.4.38 #1 SMP PREEMPT Mon Apr 2 10:14:55 UTC 2018 aarch64 aarch64 aarch64 GNU/Linux
+    
 ### Swap de  8 gigas
     # Create a swapfile for Ubuntu at the current directory location
     fallocate -l 8G swapfile
