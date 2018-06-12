@@ -23,7 +23,7 @@ With local or remote X server support:
     $ ./makeKernel.sh
     $ ./copyImage.sh
 
-## Set up virtual RAM
+## Set up virtual RAM (swap)
 
     $ fallocate -l 8G swapfile
     $ sudo chmod 600 swapfile

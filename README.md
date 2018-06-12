@@ -16,3 +16,7 @@ SDK y Tensorflow-GPU version: [INSTALL.md](INSTALL.md)
 ## Compile TensorFlow 1.8
 
 JetPack 3.1, CUDA 8, see [TF_compile_jetsonTx1.md](TF_compile_jetsonTx1.md).
+
+## Work
+
+[Notebook.md](Notebook.md)
