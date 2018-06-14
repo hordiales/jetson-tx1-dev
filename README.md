@@ -15,8 +15,13 @@ SDK y Tensorflow-GPU version: [INSTALL.md](INSTALL.md)
 
 ## Compile TensorFlow 1.8
 
-JetPack 3.1, CUDA 8, see [TF_compile_jetsonTx1.md](TF_compile_jetsonTx1.md).
+See [TF 1.8 compile with Jetson Tx1](TF_compile_jetsonTx1.md).
+Works with JetPack 3.1 and CUDA 8. Binary wheel available in tensorflow_pkg/tensorflow-1.8.0-cp35-cp35m-linux_aarch64.whl
+
+    $ sudo pip3 install tensorflow-1.8.0-cp35-cp35m-linux_aarch64.whl
+
 
 ## Work
 
-[Notebook.md](Notebook.md)
+* [Jupyter Notebook tips](Notebook.md)
+* [Scripts (español)](Scripts_es.md)

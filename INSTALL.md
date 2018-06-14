@@ -15,6 +15,8 @@ MODULE TECHNICAL SPECIFICATIONS
 
 Lo más sencillo es instalar todo desde jetpack (imagen de UbutnuOS, CUDA dependencies, etc)
 
+Verficar la versión, es un aspecto importante.
+
 https://developer.nvidia.com/embedded/jetpack
 
 Con el kit en modo restauración conectado vía micro-USB y Desde una máquina host con Ubuntu 16.04:
@@ -52,11 +54,13 @@ Editar ~/.profile y agregar al final:
 ### Config general
 
 (opcional) Detener X server:
+
     $ sudo service lightdm stop
 
 Libera RAM. También se puede configurar de forma permanente.
 
-Remover servicio:
+
+Remover servicio de ip report (se utiliza al instalar jetpack)
 TODO: buscar forma más prolija, deshabilitando
 
     rm /home/nvidia/report_ip_to_host.sh
@@ -120,6 +124,12 @@ Tensorflow pre compilado de https://github.com/jetsonhacks/installTensorFlowJets
     $ sudo pip3 install tensorflow-1.3.0-cp35-cp35m-linux_aarch64.whl 
 
 Note: *The Jetson TX1 uses a GPU architecture to 5.3, the Jetson TX2 is 6.2. The builds reflect this.*
+
+### Alternativa: compilarlo
+
+Instrucciones para compilar TensorFlow 1.8
+JetPack 3.1, CUDA 8, ver [TF_compile_jetsonTx1.md](TF_compile_jetsonTx1.md).
+
 
 ### Jupyter
 

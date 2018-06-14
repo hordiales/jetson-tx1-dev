@@ -45,3 +45,9 @@ https://github.com/jetsonhacks/jetsonUtilities/blob/master/jetsoninfo.py
     GPU MinFreq=998400000 MaxFreq=998400000 CurrentFreq=998400000
     EMC MinFreq=12750000 MaxFreq=1600000000 CurrentFreq=1600000000 FreqOverride=1
     Fan: speed=255
+
+## Liberar RAM
+
+Detener X server:
+
+    $ sudo service lightdm stop
